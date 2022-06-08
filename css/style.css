@@ -1,0 +1,734 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Gentium Plus', serif;
+ }
+ 
+ img {
+     max-width: 100%;
+ }
+ 
+ body {
+     overflow-x: hidden;
+ }
+ /* .grid1 {
+display: grid;
+grid-template-columns: 20% 80%;
+} */
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .menu {
+     position: fixed;
+     padding-top: 10%;
+     background-color: rgb(72, 70, 70);
+     height: 100vh;
+     width: 20%;
+ }
+ 
+ .menu div:first-child {
+     font-size: 1.8rem;
+     color: white;
+     font-weight: bolder;
+     background-color: rgb(114, 174, 226);
+     padding: 15px 30px;
+ }
+ 
+ .menu div:first-child p {
+     font-size: 0.9rem;
+     font-weight: 100;
+ }
+ 
+ .side {
+     margin-left: 20%;
+ }
+ 
+ .menulist {
+     background-color: rgb(56, 55, 55);
+     margin-top: 30px;
+ }
+ 
+ .menulist img {
+     display: none;
+ }
+ 
+ .menulist ul li a {
+     display: block;
+     color: white;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 10px 0;
+     font-size: 1.2rem;
+ }
+ 
+ .menulist ul li:nth-child(1) {
+     border-left: 4px solid rgb(45, 153, 196);
+     border-bottom: 1px solid grey;
+ }
+ 
+ .menulist ul li:nth-child(2) {
+     border-left: 4px solid yellow;
+     border-bottom: 1px solid grey;
+ }
+ 
+ .menulist ul li:nth-child(3) {
+     border-left: 4px solid purple;
+     border-bottom: 1px solid grey;
+ }
+ 
+ .menulist ul li:nth-child(4) {
+     border-left: 4px solid mediumseagreen;
+     border-bottom: 1px solid grey;
+ }
+ 
+ .menulist ul li:nth-child(5) {
+     border-left: 4px solid rgb(243, 14, 159);
+     border-bottom: 1px solid grey;
+ }
+ 
+ .menulist ul li:nth-child(6) {
+     border-left: 4px solid white;
+ }
+ 
+ .menulist li a:link {
+     color: white;
+ }
+ 
+ .menulist ul li:nth-child(1) a:visited,
+ .menulist ul li:nth-child(1) a:hover {
+     color: rgb(45, 153, 196);
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .menulist ul li:nth-child(2) a:visited,
+ .menulist ul li:nth-child(2) a:hover {
+     color: yellow;
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .menulist ul li:nth-child(3) a:visited,
+ .menulist ul li:nth-child(3) a:hover {
+     color: purple;
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .menulist ul li:nth-child(4) a:visited,
+ .menulist ul li:nth-child(4) a:hover {
+     color: mediumseagreen;
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .menulist ul li:nth-child(5) a:visited,
+ .menulist ul li:nth-child(5) a:hover {
+     color: rgb(243, 14, 159);
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .menulist ul li:nth-child(6) a:visited,
+ .menulist ul li:nth-child(6) a:hover {
+     color: paleturquoise;
+     background-color: rgb(54, 50, 50);
+ }
+ 
+ .slidershow {
+     width: 100%;
+     height: 80vh;
+     overflow: hidden;
+ }
+ 
+ .slider {
+     width: 300%;
+     height: 80vh;
+     display: flex;
+ }
+ 
+ .slider input {
+     display: none;
+ }
+ 
+ .slide {
+     width: 33.3333333%;
+     transition: 2s;
+ }
+ 
+ .slide img {
+     width: 100%;
+     height: 80vh;
+ }
+ 
+ .nav {
+     position: absolute;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-left: -10%;
+     margin-top: -40px;
+ }
+ 
+ .mbtn {
+     border: 3px solid white;
+     padding: 5px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: 1s;
+ }
+ 
+ .mbtn:not(:last-child) {
+     margin-right: 30px;
+ }
+ 
+ .mbtn:hover {
+     background: white;
+ }
+ 
+ #r1:checked~.first {
+     margin-left: 0;
+ }
+ 
+ #r2:checked~.first {
+     margin-left: -33.33333%;
+ }
+ 
+ #r3:checked~.first {
+     margin-left: -66.6666666%;
+ }
+ /* aboutus */
+ 
+ .container {
+     width: 90%;
+     margin: 0 auto;
+ }
+ 
+ .welcome {
+     margin: 40px auto;
+ }
+ 
+ .welcome h1 {
+     color: rgb(45, 153, 196);
+     font-size: 2rem;
+     text-transform: uppercase;
+     text-align: center;
+ }
+ 
+ .welcome p {
+     font-size: 1.1rem;
+     color: gray;
+     margin: 10px auto;
+ }
+ 
+ .welcome p a {
+     color: rgb(45, 153, 196);
+ }
+ 
+ .titlebar {
+     border-top: 5px solid yellow;
+     margin-top: 50px;
+ }
+ 
+ .titlebar h2 {
+     background-color: rgb(207, 207, 43);
+     width: 15%;
+     color: white;
+     padding: 5px;
+     text-align: center;
+     font-weight: 100;
+ }
+ 
+ .grid2 {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     margin: 100px auto;
+     column-gap: 10px;
+     align-content: center;
+ }
+ 
+ .image {
+     position: relative;
+     width: 100%;
+ }
+ 
+ .grid2 div img {
+     height: 100%;
+     width: 100%;
+     display: block;
+ }
+ 
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(207, 207, 43, 0.4);
+     color: rgb(207, 207, 43);
+     opacity: 0;
+ }
+ 
+ .overlay i {
+     font-size: 1.5rem;
+     color: white;
+     padding: 8px;
+     border: 1px solid rgb(207, 207, 43);
+     margin: 8px;
+     background-color: rgba(111, 111, 25, 0.4);
+ }
+ 
+ .overlay i:active {
+     color: white;
+ }
+ 
+ .grid2 div .overlay:hover {
+     opacity: 1;
+     transition: 3s;
+ }
+ 
+ .grid2 div p {
+     text-align: center;
+ }
+ 
+ .grid2 div p a {
+     color: rgb(207, 207, 43);
+     font-size: 1.5rem;
+ }
+ 
+ .grid2 div p:last-child {
+     color: gray;
+     text-align: center;
+ }
+ 
+ .grid3 {
+     display: grid;
+     grid-template-columns: 70% 30%;
+ }
+ 
+ .grid3 div h2,
+ .grid5 div h2 {
+     color: rgb(207, 207, 43);
+     font-size: 2rem;
+     font-weight: 300;
+ }
+ 
+ .grid3 div p,
+ .grid5 div p {
+     color: gray;
+     margin: 20px auto;
+     line-height: 1.8;
+ }
+ 
+ .grid3img {
+     margin: 40px 10px;
+ }
+ /* services */
+ 
+ .titlebar2 {
+     border-top: 5px solid purple;
+     margin-top: 30px;
+ }
+ 
+ .titlebar2 h2 {
+     background-color: rgb(170, 75, 170);
+     width: 15%;
+     color: white;
+     padding: 5px;
+     text-align: center;
+     font-weight: 100;
+ }
+ 
+ .grid4 {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     margin-top: 50px;
+ }
+ 
+ .grid4 div {
+     background-color: rgb(170, 75, 170);
+     margin-right: 20px;
+     padding: 10px;
+     border-radius: 5px;
+     height: 4rem;
+ }
+ 
+ .grid4 div i {
+     color: white;
+     font-size: 1.5rem;
+     padding-left: 5px;
+     font-weight: bolder;
+ }
+ 
+ .grid4 div p {
+     color: white;
+     font-size: 1.5rem;
+     display: inline-block;
+     padding: 0 15px;
+     font-weight: 700;
+ }
+ 
+ .grid5 {
+     display: grid;
+     grid-template-columns: 75% 25%;
+     margin-top: 50px;
+ }
+ 
+ .grid5 div h2 {
+     color: rgb(170, 75, 170);
+ }
+ 
+ .progress {
+     margin-top: 8px;
+ }
+ 
+ .progress div {
+     width: 100%;
+     background-color: rgba(72, 70, 70, 0.5);
+     margin-bottom: 10px;
+     border: 1px solid rgb(91, 90, 90);
+     border-radius: 8px;
+ }
+ 
+ .progress div p {
+     background-color: rgb(170, 75, 170);
+     padding: 0;
+     margin: 0;
+     color: white;
+     font-size: 0.9rem;
+     padding-left: 3px;
+     border-radius: 8px;
+ }
+ 
+ .progress div:nth-child(1) p {
+     width: 90%;
+ }
+ 
+ .progress div:nth-child(2) p {
+     width: 80%;
+ }
+ 
+ .progress div:nth-child(3) p {
+     width: 75%;
+ }
+ 
+ .progress div:nth-child(4) p {
+     width: 65%;
+ }
+ /* portfolio */
+ 
+ .titlebar3 {
+     border-top: 5px solid mediumseagreen;
+     margin-top: 50px;
+ }
+ 
+ .titlebar3 h2 {
+     background-color: rgb(84, 241, 155);
+     width: 15%;
+     color: white;
+     padding: 5px;
+     text-align: center;
+     font-weight: 100;
+ }
+ 
+ .grid6 {
+     margin-top: 50px;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     gap: 80px 50px;
+ }
+ 
+ .grid6 div img {
+     height: 100%;
+     width: 100%;
+     display: block;
+ }
+ 
+ .image2 {
+     position: relative;
+     width: 100%;
+ }
+ 
+ .overlay2 {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(60, 179, 113, 0.6);
+     color: mediumseagreen;
+     opacity: 0;
+     transition: 2s;
+ }
+ 
+ .overlay2 i {
+     color: white;
+     font-size: 1.5rem;
+     margin-left: 50%;
+     margin-top: 50%;
+ }
+ 
+ .grid6 div .overlay2:hover {
+     opacity: 1;
+ }
+ 
+ .grid6 div p {
+     text-align: center;
+     padding: 10px 0;
+ }
+ 
+ .grid6 div p a {
+     color: mediumseagreen;
+     font-size: 1.5rem;
+     font-weight: 400;
+ }
+ 
+ .greenbtn {
+     display: block;
+     text-align: center;
+     /* margin-left: 50px; */
+     margin-top: 70px;
+ }
+ 
+ .greenbtn button {
+     background-color: mediumseagreen;
+     padding: 5px;
+     width: 20%;
+ }
+ 
+ .greenbtn button a {
+     color: white;
+     font-weight: bold;
+ }
+ /* contactus */
+ 
+ .titlebar4 {
+     border-top: 5px solid rgb(243, 14, 159);
+     margin-top: 50px;
+ }
+ 
+ .titlebar4 h2 {
+     background-color: rgb(228, 87, 177);
+     width: 15%;
+     color: white;
+     padding: 5px;
+     text-align: center;
+     font-weight: 100;
+ }
+ 
+ iframe {
+     margin-top: 50px;
+     width: 100%;
+     height: 50vh;
+ }
+ 
+ .form {
+     margin-top: 50px;
+ }
+ 
+ .form div input {
+     height: 30px;
+     border: 1px solid gray;
+ }
+ 
+ .form div input:hover,
+ .form textarea:hover {
+     background-color: rgba(243, 14, 159, 0.5);
+ }
+ 
+ .form div label {
+     color: gray;
+ }
+ 
+ .form div label,
+ .form div input {
+     display: block;
+     text-transform: uppercase;
+     padding: 5px 0;
+     width: 100%;
+ }
+ 
+ .form div:not(.textarea) {
+     display: block;
+     width: 100%;
+ }
+ 
+ .textarea {
+     width: 100%;
+     margin-top: 20px;
+ }
+ 
+ textarea {
+     width: 100%;
+ }
+ 
+ .form button {
+     color: white;
+     background-color: rgb(228, 87, 177);
+     width: 20%;
+     height: 5vh;
+     font-size: 1rem;
+     /* font-weight: bold; */
+     margin: 10px auto;
+ }
+ /* footer */
+ 
+ .footer {
+     width: 100%;
+     background-color: rgb(72, 70, 70);
+     margin: 0 auto;
+     text-align: center;
+     margin-top: 50px;
+     border-left: 5px solid black;
+ }
+ 
+ .footer div {
+     padding: 50px 0;
+ }
+ 
+ .footer div i {
+     font-size: 1.5rem;
+     color: white;
+     padding: 8px;
+     background-color: rgb(56, 55, 55);
+ }
+ 
+ .footer .copy {
+     background-color: rgb(56, 55, 55);
+     padding: 10px 0;
+ }
+ 
+ .footer .copy span {
+     color: white;
+     padding: 0 2px;
+ }
+ /* media 575 */
+ 
+ @media only screen and (max-width:575px) {
+     .menu {
+         position: relative;
+         padding-top: 0;
+         height: 9vh;
+         width: 100%;
+         background-color: white;
+     }
+     .menu div:first-child {
+         font-size: 1rem;
+         font-weight: 200;
+         padding: 5px;
+     }
+     .menu img {
+         display: block;
+         width: 10%;
+         position: absolute;
+         right: 5px;
+         top: 10px;
+         background-color: rgb(114, 174, 226);
+     }
+     .menulist {
+         /* display: none; */
+         margin-top: 0;
+         transition: 2s;
+     }
+     .menulist ul {
+         display: none;
+     }
+     .side {
+         margin-left: 0;
+     }
+     .slide img {
+         height: auto;
+         margin: 0;
+         margin-bottom: 318px;
+     }
+     .slider,
+     .slidershow {
+         height: auto;
+     }
+     .nav {
+         margin-left: 0;
+         margin-top: -350px;
+     }
+     .container {
+         width: 95%;
+         text-align: center;
+         margin-top: 5%;
+     }
+     .welcome {
+         margin-top: -325px;
+     }
+     .welcome h1 {
+         font-size: 1.5rem;
+     }
+     .welcome p {
+         font-size: 0.9rem;
+     }
+     .titlebar,
+     .titlebar2,
+     .titlebar3,
+     .titlebar4 {
+         margin-top: 0;
+         border-width: 2px;
+     }
+     .titlebar h2,
+     .titlebar2 h2,
+     .titlebar3 h2,
+     .titlebar4 h2 {
+         width: 30%;
+         font-size: 1rem;
+     }
+     .grid2,
+     .grid3,
+     .grid4,
+     .grid5,
+     .grid6 {
+         grid-template-columns: 100%;
+         margin-top: 30px;
+     }
+     .grid2 div {
+         margin-bottom: 70px;
+     }
+     .grid3 {
+         margin-top: -80px;
+     }
+     .grid4 div {
+         margin: 10px auto;
+         width: 100%;
+         height: auto;
+     }
+     .grid5>div:last-child,
+     .greenbtn button {
+         margin-bottom: 30px;
+     }
+     .overlay2 i {
+         margin-left: 0;
+     }
+     .greenbtn button {
+         width: auto;
+     }
+     iframe {
+         margin-top: 30px;
+         height: 30vh;
+     }
+     .form {
+         margin-top: 20px;
+     }
+     textarea {
+         height: 10vh;
+     }
+     .form button {
+         width: auto;
+         padding: 8px;
+         margin-top: 15px;
+     }
+     .footer {
+         margin-top: 0;
+     }
+     .footer div {
+         padding: 20px 0;
+     }
+     .footer div i,
+     .grid4 div p,
+     .grid4 div i {
+         font-size: 1rem;
+     }
+ }
+ /* media415 */
