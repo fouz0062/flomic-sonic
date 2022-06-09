@@ -345,6 +345,7 @@ a {
 
 .flex4 div h2 {
     color: rgb(170, 75, 170);
+    font-size: 2rem;
 }
 
 .progress {
@@ -486,7 +487,7 @@ iframe {
     text-transform: uppercase;
     color: rgb(41, 42, 42);
     font-weight: bold;
-    margin: 10px 5px;
+    margin: 10px 0px;
 }
 
 .form .textarea,
