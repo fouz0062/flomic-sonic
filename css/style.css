@@ -631,6 +631,10 @@ grid-template-columns: 20% 80%;
      .menulist ul {
          display: none;
      }
+     .menulist ul li a {
+         font-size: 0.7rem;
+         padding: 5px 0;
+     }
      .side {
          margin-left: 0;
      }
@@ -717,7 +721,7 @@ grid-template-columns: 20% 80%;
      .form button {
          width: auto;
          padding: 8px;
-         margin-top: 15px;
+         /* margin-top: 15px; */
      }
      .footer {
          margin-top: 0;
