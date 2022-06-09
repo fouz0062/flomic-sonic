@@ -722,6 +722,7 @@ grid-template-columns: 20% 80%;
          width: auto;
          padding: 8px;
          /* margin-top: 15px; */
+         height: auto;
      }
      .footer {
          margin-top: 0;
