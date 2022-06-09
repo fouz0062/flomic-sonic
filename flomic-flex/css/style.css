@@ -27,8 +27,8 @@ a {
 .leftcolumn div:first-child {
     background-color: rgb( 69, 234, 241);
     color: white;
-    padding: 20px 2px;
-    margin-top: 20vh;
+    padding: 20px 5px;
+    /* margin-top: 20vh; */
 }
 
 .leftcolumn div:first-child h2 {
@@ -700,6 +700,7 @@ button {
     }
     .footer {
         margin-top: 20px;
+        border-left: none;
     }
     .footer div {
         padding: 20px 0;
