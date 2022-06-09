@@ -567,6 +567,7 @@ button {
         padding: 0;
         text-align: center;
         margin-top: 0;
+        width: 100%;
     }
     .leftcolumn div:first-child h2,
     .welcome h1,
@@ -582,6 +583,7 @@ button {
     }
     .menulist {
         margin: 0;
+        width: 100%;
     }
     ul {
         display: flex;
@@ -597,6 +599,10 @@ button {
     }
     .rightcolumn {
         margin-left: 0;
+        width: 100%;
+    }
+    .slider {
+        width: 100%;
     }
     .slider .slide img {
         height: auto;
