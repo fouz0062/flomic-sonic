@@ -649,6 +649,9 @@ button {
         margin-top: 0;
         text-align: center;
     }
+    .flex2 img {
+        margin: 20px auto;
+    }
     .flex3 {
         margin-top: 20px;
     }
